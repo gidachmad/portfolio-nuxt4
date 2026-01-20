@@ -1,1 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+JP:wght@100..900&display=swap');
 @import "tailwindcss";
+@import "@nuxt/ui";
+
+@layer base {
+  *, html {
+    font-family: "JetBrains Mono", monospace, "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* font-size: 16px; */
+  }
+
+  body {
+    @apply bg-zinc-200 dark:text-zinc-200 text-zinc-900 dark:bg-zinc-900 absolute transition-all duration-300;
+  }
+
+  h1 { font-size: var(--text-5xl); }
+  h2 { font-size: var(--text-4xl); }
+  h3 { font-size: var(--text-3xl); }
+  h4 { font-size: var(--text-2xl); }
+  h5 { font-size: var(--text-xl); }
+}
+
+
+/* Primary and Surface Palettes */
+:root {
+    /* --p-primary-50: #ecfdf5;
+    --p-primary-100: #d1fae5;
+    --p-primary-200: #a7f3d0;
+    --p-primary-300: #6ee7b7;
+    --p-primary-400: #34d399;
+    --p-primary-500: #10b981;
+    --p-primary-600: #059669;
+    --p-primary-700: #047857;
+    --p-primary-800: #065f46;
+    --p-primary-900: #064e3b;
+    --p-primary-950: #022c22; */
+
+    --p-primary-50: #eff7ff;
+    --p-primary-100: #deeeff;
+    --p-primary-200: #b6ddff;
+    --p-primary-300: #76c3ff;
+    --p-primary-400: #2da5ff;
+    --p-primary-500: #028af5;
+    --p-primary-600: #006bd2;
+    --p-primary-700: #0056aa;
+    --p-primary-800: #004687;
+    --p-primary-900: #073d73;
+    --p-primary-950: #04264d;
+
+    --p-surface-0: #ffffff;
+    --p-surface-50: #fafafa;
+    --p-surface-100: #f4f4f5;
+    --p-surface-200: #e4e4e7;
+    --p-surface-300: #d4d4d8;
+    --p-surface-400: #a1a1aa;
+    --p-surface-500: #71717a;
+    --p-surface-600: #52525b;
+    --p-surface-700: #3f3f46;
+    --p-surface-800: #27272a;
+    --p-surface-900: #18181b;
+    --p-surface-950: #09090b;
+    --p-content-border-radius: 6px;
+}
+
+/* Light */
+:root {
+    --p-primary-color: var(--p-primary-500);
+    --p-primary-contrast-color: var(--p-surface-0);
+    --p-primary-hover-color: var(--p-primary-600);
+    --p-primary-active-color: var(--p-primary-700);
+    --p-content-border-color: var(--p-surface-200);
+    --p-content-hover-background: var(--p-surface-100);
+    --p-content-hover-color: var(--p-surface-800);
+    --p-highlight-background: var(--p-primary-50);
+    --p-highlight-color: var(--p-primary-700);
+    --p-highlight-focus-background: var(--p-primary-100);
+    --p-highlight-focus-color: var(--p-primary-800);
+    --p-text-color: var(--p-surface-700);
+    --p-text-hover-color: var(--p-surface-800);
+    --p-text-muted-color: var(--p-surface-500);
+    --p-text-hover-muted-color: var(--p-surface-600);
+}
+
+/*
+ * Dark Mode
+ * Defaults to system, change the dark variant selector to match the CSS variable configuration.
+ * For example;
+ * @custom-variant dark (&:where(.app-dark, .app-dark *));
+ * should match to;
+ * :root[class="app-dark"]
+*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --p-primary-color: var(--p-primary-400);
+        --p-primary-contrast-color: var(--p-surface-900);
+        --p-primary-hover-color: var(--p-primary-300);
+        --p-primary-active-color: var(--p-primary-200);
+        --p-content-border-color: var(--p-surface-700);
+        --p-content-hover-background: var(--p-surface-800);
+        --p-content-hover-color: var(--p-surface-0);
+        --p-highlight-background: color-mix(in srgb, var(--p-primary-400), transparent 84%);
+        --p-highlight-color: rgba(255, 255, 255, 0.87);
+        --p-highlight-focus-background: color-mix(in srgb, var(--p-primary-400), transparent 76%);
+        --p-highlight-focus-color: rgba(255, 255, 255, 0.87);
+        --p-text-color: var(--p-surface-0);
+        --p-text-hover-color: var(--p-surface-0);
+        --p-text-muted-color: var(--p-surface-400);
+        --p-text-hover-muted-color: var(--p-surface-300);
+    }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

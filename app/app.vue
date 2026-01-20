@@ -1,8 +1,11 @@
+<script lang="ts" setup>
+provideHeadlessUseId(() => useId());
+</script>
 
 <template>
-  <div class="flex flex-col min-h-screen">
-    <AppHeader />
-    <main class=" flex-1">this is main</main>
-    <AppFooter />
-  </div>
+  <UApp>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </UApp>
 </template>
