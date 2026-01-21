@@ -3,6 +3,8 @@
     <ProfileAbout />
     <ProfileExperience />
     <ProfileStudy />
+    <ProfileProjects />
+    <ProfileSideProjects />
     <ProfileContact />
   </div>
 </template>

@@ -16,21 +16,15 @@ const expWorks = useState<experienceTypes[]>("expWorks",
 </script>
 
 <template>
-  <section>
-    <header class="flex items-center mb-4 border-b-2 w-max">
-      <Icon
-        name="mdi:briefcase"
-        class="w-8 h-8 mr-2"
-      />
-      <h3>
-        Experience
-      </h3>
-    </header>
+  <BasePortfolioSection
+    title="Experience"
+    icon="mdi:briefcase-outline"
+  >
     <div
-      v-for="exp in expWorks"
-      :key="exp.company"
+      v-for="(exp, index) in expWorks"
+      :key="index"
     >
       <ExpTimeline :data="exp" />
     </div>
-  </section>
+  </BasePortfolioSection>
 </template>

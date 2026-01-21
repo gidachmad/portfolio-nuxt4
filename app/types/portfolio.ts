@@ -7,3 +7,12 @@ export interface experienceTypes {
   skills: string[];
   proof?: string;
 }
+
+export interface projectTypes {
+  title: string;
+  role?: string;
+  link: string;
+  desc: string;
+  // year: string | number;
+  skills?: string[];
+}

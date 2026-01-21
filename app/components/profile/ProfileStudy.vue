@@ -16,19 +16,12 @@
 </script>
 
 <template>
-  <section>
-    <header class="flex items-center mb-4 border-b-2 w-max">
-      <Icon
-        name="mdi:account-student"
-        class="w-8 h-8 mr-2"
-      />
-      <h3>
-        Academics
-      </h3>
-    </header>
-
+  <BasePortfolioSection
+    title="Academics"
+    icon="mdi:account-student-outline"
+  >
     <article>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, qui corporis consequuntur in voluptatum sit quos voluptates tempora iusto blanditiis, maiores id ullam tempore sequi veniam aspernatur sed inventore maxime consectetur exercitationem alias, culpa dolor! Rerum qui et, obcaecati nobis dolorem similique labore error nesciunt, eaque officiis veniam at esse.
     </article>
-  </section>
+  </BasePortfolioSection>
 </template>
