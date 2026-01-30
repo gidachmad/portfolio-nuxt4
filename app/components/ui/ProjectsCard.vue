@@ -7,22 +7,25 @@ defineProps<{
 </script>
 
 <template>
-  <BaseItemComponent :skills="data.skills">
-    <template
-      #header
-    >
-      <a
-        target="_blank"
-        :href="data.link"
-        class="flex items-center cursor-pointer"
-        rel="noopener noreferrer"
-        aria-label="Open project in new tab"
-      >
+  <BaseItemComponent
+    :skills="data.skills"
+    :examples="data.examples"
+  >
+    <template #header>
+      <div class="flex items-center">
         <h4>
-          {{ data.title }}
+          <a
+            target="_blank"
+            :href="data.link"
+            class=" cursor-pointer"
+            rel="noopener noreferrer"
+            aria-label="Open project in new tab"
+          >
+            {{ data.title }}
+          </a>
         </h4>
         <Icon name="mdi:launch" />
-      </a>
+      </div>
     </template>
 
     {{ data.desc }}

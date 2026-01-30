@@ -6,14 +6,16 @@ import { sideProjects } from "~/data/projects";
 const sideprojects = useState<projectTypes[]>("sideprojects",
   () => sideProjects.map(item => ({
     title: item.title,
+    kind: item.kind,
     desc: item.desc,
     link: item.link,
+    examples: item.examples,
   })));
 </script>
 
 <template>
   <BasePortfolioSection
-    title="Projects"
+    title="Side Projects"
     icon="mdi:code-braces"
   >
     <div

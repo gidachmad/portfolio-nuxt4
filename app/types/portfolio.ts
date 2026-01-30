@@ -8,11 +8,21 @@ export interface experienceTypes {
   proof?: string;
 }
 
+type ProjectKind = "normal" | "pixel-art" | "video";
+
 export interface projectTypes {
   title: string;
   role?: string;
   link: string;
   desc: string;
-  // year: string | number;
+  kind: ProjectKind;
   skills?: string[];
+  examples?: exampleTypes[];
+  // year: string | number;
+}
+
+export interface exampleTypes {
+  name: string;
+  url: string;
+  youtubeId?: string;
 }

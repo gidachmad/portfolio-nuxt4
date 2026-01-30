@@ -12,6 +12,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@nuxt/eslint": "^1.12.1",
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/icon": "^2.1.1",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^25.1.0",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   }

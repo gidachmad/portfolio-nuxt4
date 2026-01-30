@@ -7,6 +7,7 @@ const projects = useState<projectTypes[]>("projects",
   () => codingProjects.map(item => ({
     title: item.title,
     desc: item.desc,
+    kind: item.kind,
     // year: item.year,
     skills: item.skills,
     link: item.link,
