@@ -2,6 +2,7 @@ export interface experienceTypes {
   company: string;
   role: string;
   desc: string;
+  desc_list: string[];
   start_date: string | number;
   end_date: string | number;
   skills: string[];

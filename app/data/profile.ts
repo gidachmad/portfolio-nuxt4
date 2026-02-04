@@ -21,6 +21,9 @@ const experiencePuti = {
   description_en: "Frontend Web Developer at the Directorate of Information and Technology, Telkom University. The applications I developed are used internally by employees within the Telkom University organization.",
   description_id: "Frontend Web Developer di Direktorat Pusat Informasi dan Teknologi, Universitas Telkom. Aplikasi yang saya kembangkan digunakan secara internal oleh pegawai di lingkungan organisasi Universitas Telkom.",
   description_jp: "Telkom大学情報技術センター所属のフロントエンド・ウェブ開発者。私が開発したアプリケーションは、Telkom大学組織内の社員によって社内利用されています。",
+  description_list: [
+    "Develop and maintain Situ - Service desk",
+  ],
   project_list: [
     "Situ - Service Desk",
     "Dashboard Dikti",
@@ -46,6 +49,9 @@ const experienceWorkTelkom = {
   description_en: "Become Assistant Lecturer for Associate's degree, Computer Software Engineering Telkom University on following subject ",
   description_id: "Menjadi Asisten Dosen untuk Program D3 Rekayasa Perangkat Lunak Aplikasi di Universitas Telkom.",
   description_jp: "テルコム大学における応用ソフトウェア工学の短期大学課程 (D3) の助教となる",
+  description_list: [
+    "Develop and maintain Situ - Service desk",
+  ],
   project_list: [
     "Database System 1 & 2",
     "Web Programming 1",
@@ -70,6 +76,10 @@ const experienceStudyD3Telkom = {
   description_id: "Penerima Beasiswa APERTI BUMN",
   description_jp: "APERTI BUMN奨学金受給者",
   project_list: [],
+  description_list: [
+    "list1",
+    "list2",
+  ],
 };
 
 const experienceStudyS1Telkom = {
@@ -83,6 +93,9 @@ const experienceStudyS1Telkom = {
   description_en: "Undergraduate academic experience focused on Optical Character Recognition (OCR). Conducted applied research on handwritten Sundanese script recognition using EfficientNet-based models. Worked on dataset preparation, model training, and evaluation with CER and WER metrics.",
   description_id: "-",
   description_jp: "-",
+  description_list: [
+    "Develop and maintain Situ - Service desk",
+  ],
   project_list: [],
 };
 

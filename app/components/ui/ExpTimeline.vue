@@ -20,6 +20,20 @@ defineProps<{
       </p>
     </template>
 
-    {{ data.desc }}
+    <p>
+      {{ data.desc }}
+    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet.
+      </p>
+      <ul
+        v-for="(desc_li, index) in data.desc_list"
+        :key="index"
+        class=" list-disc"
+      >
+        <li>{{ desc_li }}</li>
+      </ul>
+    </div>
   </BaseItemComponent>
 </template>
