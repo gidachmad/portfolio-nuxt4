@@ -12,9 +12,11 @@ defineProps<{
     <header class="border-b-2 pb-2 flex flex-col">
       <slot name="header" />
     </header>
-    <p class=" text-sm">
-      <slot />
-    </p>
+
+    <div class="text-sm">
+      <slot name="content" />
+    </div>
+
     <div
       v-if="skills"
       class="flex gap-2 items-center"

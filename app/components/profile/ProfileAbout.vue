@@ -7,15 +7,16 @@ const aboutDesc = about.description_en;
 
 <template>
   <section class="flex flex-col gap-4 items-center mt-4">
-    <div class="w-32 h-32 overflow-hidden rounded-full">
+    <!-- <div class="w-32 h-32 overflow-hidden rounded-full">
       <NuxtImg
         src="/images/portfolio/profile_formal.png"
         alt="profile"
       />
-    </div>
-    <div class="text-center">
+    </div> -->
+    <div class="text-center flex flex-col">
       <h2>Gid Achmad Ahlul Fadli</h2>
       <small>Tasikmalaya | Bandung, Indonesia</small>
+      <small>Web Developer | Freelancer</small>
     </div>
     <ul class="flex">
       <li>

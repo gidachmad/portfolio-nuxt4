@@ -28,6 +28,8 @@ defineProps<{
       </div>
     </template>
 
-    {{ data.desc }}
+    <template #content>
+      {{ data.desc }}
+    </template>
   </BaseItemComponent>
 </template>

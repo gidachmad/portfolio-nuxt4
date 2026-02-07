@@ -3,12 +3,17 @@ import tailwindcss from "@tailwindcss/vite";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxt/icon", // '@nuxtjs/tailwindcss',
-    "@nuxt/image", "@nuxt/eslint", "@nuxt/fonts", "@nuxtjs/color-mode", "nuxt-headlessui", "@nuxt/ui"],
+    // "@nuxt/image",
+    "@nuxt/eslint", "@nuxt/fonts", "@nuxtjs/color-mode", "nuxt-headlessui", "@nuxt/ui"],
+  ssr: false,
   devtools: { enabled: true },
+  app: {
+    baseURL: "/",
+  },
   css: ["./app/assets/css/main.css"],
   colorMode: {
     classSuffix: "",
-    preference: "light",
+    preference: "system",
     fallback: "light",
   },
   runtimeConfig: {
@@ -40,8 +45,9 @@ export default defineNuxtConfig({
   icon: {
     mode: "css",
     cssLayer: "base",
-    serverBundle: {
-      collections: ["uil", "mdi"], // <!--- this
-    },
+    serverBundle: false,
+    // serverBundle: {
+    //   collections: ["uil", "mdi"], // <!--- this
+    // },
   },
 });

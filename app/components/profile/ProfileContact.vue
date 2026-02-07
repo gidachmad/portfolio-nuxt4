@@ -5,6 +5,13 @@ import { contactFormSchema, type ContactForm } from "~/schemas/contact";
 
 const config = useRuntimeConfig();
 // console.log(config.public.emailjsServiceId ? config.public.emailjsServiceId : "nothing");
+function checkRuntimeEmail() {
+  if (!config.public.emailjsServiceId) {
+    return console.warn("EmailJS disabled on static build");
+  }
+}
+
+checkRuntimeEmail();
 
 const form = reactive<ContactForm>({
   name: "",

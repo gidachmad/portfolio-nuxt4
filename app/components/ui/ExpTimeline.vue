@@ -20,20 +20,21 @@ defineProps<{
       </p>
     </template>
 
-    <p>
-      {{ data.desc }}
-    </p>
-    <div>
+    <template #content>
       <p>
-        Lorem ipsum dolor sit amet.
+        {{ data.desc }}
+      </p>
+
+      <p class="mt-4">
+        What I do :
       </p>
       <ul
         v-for="(desc_li, index) in data.desc_list"
         :key="index"
-        class=" list-disc"
+        class="list-disc"
       >
         <li>{{ desc_li }}</li>
       </ul>
-    </div>
+    </template>
   </BaseItemComponent>
 </template>

@@ -27,3 +27,14 @@ export interface exampleTypes {
   url: string;
   youtubeId?: string;
 }
+
+export interface academicTypes {
+  institution: string;
+  degree: string;
+  thesis_title: string;
+  desc: string;
+  desc_list: string[];
+  gpa: number;
+  max_gpa: number;
+  year: number;
+}

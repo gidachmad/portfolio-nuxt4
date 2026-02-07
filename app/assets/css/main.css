@@ -8,6 +8,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     /* font-size: 16px; */
+    @apply transition duration-75
   }
 
   body {
