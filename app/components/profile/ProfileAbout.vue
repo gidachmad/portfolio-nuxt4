@@ -21,6 +21,17 @@ const aboutDesc = about.description_en;
     <ul class="flex">
       <li>
         <a
+          :href="personalData.github"
+          target="_blank"
+        >
+          <Icon
+            icon="mdi:github"
+            class="w-10 h-10"
+          />
+        </a>
+      </li>
+      <li>
+        <a
           :href="`https://mail.google.com/mail/?view=cm&fs=1&to=` + personalData.work_email"
           target="_blank"
         >

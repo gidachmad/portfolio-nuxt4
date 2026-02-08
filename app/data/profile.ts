@@ -3,6 +3,7 @@ export const personalData = {
   work_email: "gid.achmad@gmail.com",
   linkedin: "https://www.linkedin.com/in/gid-achmad/",
   whatsapp: "62881023669910",
+  github: "https://github.com/gidachmad",
 };
 
 export const about = {

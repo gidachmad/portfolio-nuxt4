@@ -61,111 +61,6 @@ const sendForm = async (event: FormSubmitEvent<ContactForm>) => {
 </script>
 
 <template>
-  <UForm
-    :schema="contactFormSchema"
-    :state="form"
-    class="space-y-6 flex flex-col items-center"
-    @submit="sendForm"
-  >
-    <UFormField
-      label="Name"
-      class="w-full"
-      name="name"
-    >
-      <UInput
-        v-model="form.name"
-        class="w-full"
-        placeholder="Who are you?"
-      />
-    </UFormField>
-
-    <UFormField
-      label="Email"
-      class="w-full"
-      name="email"
-    >
-      <UInput
-        v-model="form.email"
-        class="w-full"
-        placeholder="May I ask your email?"
-      />
-    </UFormField>
-
-    <UFormField
-      label="Subject"
-      name="subject"
-      class="w-full"
-    >
-      <UInput
-        v-model="form.subject"
-        class="w-full"
-        name="subject"
-        placeholder="What's the matter?"
-      />
-    </UFormField>
-
-    <UFormField
-      label="Message"
-      class="w-full"
-      name="message"
-    >
-      <UTextarea
-        v-model="form.message"
-        class="w-full"
-        size="xl"
-        :maxrows="8"
-        autoresize
-        placeholder="Tell me more about it..."
-      />
-    </UFormField>
-
-    <UButton
-      type="submit"
-      :loading="isSending"
-    >
-      Send Message
-    </UButton>
-
-    <p
-      v-if="success"
-      class="text-green-500 text-sm"
-    >
-      Message sent successfully!
-    </p>
-
-    <p
-      v-if="error"
-      class="text-red-500 text-sm"
-    >
-      {{ error }}
-    </p>
-
-    <!-- Fallback -->
-    <a
-      href="mailto:you@email.com"
-      class="text-xs underline opacity-70"
-    >
-      Or send via email client
-    </a>
-  </UForm>
-</template>
-
-<!-- <script setup lang="ts">
-import type { FormSubmitEvent } from "@nuxt/ui";
-import { contactFormSchema, type ContactForm } from "~/schemas/contact";
-
-const form = reactive({
-  subject: "",
-  message: "",
-});
-
-const sendForm = (event: FormSubmitEvent<ContactForm>) => {
-  alert("something something");
-  // alert("valid data:" + event.data.subject);
-};
-</script>
-
-<template>
   <BasePortfolioSection
     title="Contact me!"
     icon="mdi:email-edit-outline"
@@ -179,6 +74,30 @@ const sendForm = (event: FormSubmitEvent<ContactForm>) => {
       class="space-y-6 flex flex-col items-center"
       @submit="sendForm"
     >
+      <UFormField
+        label="Name"
+        class="w-full"
+        name="name"
+      >
+        <UInput
+          v-model="form.name"
+          class="w-full"
+          placeholder="Who are you?"
+        />
+      </UFormField>
+
+      <UFormField
+        label="Email"
+        class="w-full"
+        name="email"
+      >
+        <UInput
+          v-model="form.email"
+          class="w-full"
+          placeholder="May I ask your email?"
+        />
+      </UFormField>
+
       <UFormField
         label="Subject"
         name="subject"
@@ -209,10 +128,32 @@ const sendForm = (event: FormSubmitEvent<ContactForm>) => {
 
       <UButton
         type="submit"
-        class="py-2 w-full justify-center cursor-pointer"
+        :loading="isSending"
       >
-        Send
+        Send Message
       </UButton>
+
+      <p
+        v-if="success"
+        class="text-green-500 text-sm"
+      >
+        Message sent successfully!
+      </p>
+
+      <p
+        v-if="error"
+        class="text-red-500 text-sm"
+      >
+        {{ error }}
+      </p>
+
+      <!-- Fallback -->
+      <a
+        href="mailto:you@email.com"
+        class="text-xs underline opacity-70"
+      >
+        Or send via email client
+      </a>
     </UForm>
   </BasePortfolioSection>
-</template> -->
+</template>
