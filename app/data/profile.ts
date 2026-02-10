@@ -7,9 +7,20 @@ export const personalData = {
 };
 
 export const about = {
-  description_en: "Frontend Web Developer with 3 years of professional experience building and maintaining web applications using in-house Angular JavaScript Framework. I enjoy using TailwindCSS to create modern, responsive user interfaces. Adaptable developer with a fast learning curve and strong exposure to diverse project environmentn.",
+  description_en: "Frontend Web Developer with 3 years of professional experience building and maintaining web applications using in-house Angular JavaScript Framework. I enjoy using TailwindCSS to create modern, responsive user interfaces. Adaptable developer with a fast learning curve and strong exposure to diverse project environment.",
   description_id: "Saya adalah seorang pengembang serba bisa dengan fokus utama pada Frontend Web Development. Dengan pengalaman profesional selama 3 tahun menggunakan framework JavaScript seperti Angular dan React.js, saya senang membangun antarmuka modern menggunakan Tailwind CSS. Saya percaya diri dengan kemampuan adaptasi dan kecepatan belajar saya.",
   description_jp: "私は主にフロントエンド・ウェブ開発に取り組むマルチスキルの開発者です。AngularやReact.jsといったJavaScriptフレームワークの使用経験があり、Tailwind CSSを使ったモダンなUI構築を楽しんでいます。プログラミングだけでなく、データサイエンスやフリーランスのスキルも学び続けています。私の夢は、インドネシアの田舎で穏やかに暮らしながら、海外の都市で働く人々に匹敵する収入を得ることです。",
+};
+
+export const techSkills = {
+  "Programming Languages": [
+    "JavaScript", "Typescript", "Python",
+  ],
+  "Frameworks / Libraries": [
+    "ReactJS",
+    "VueJS", "NuxtJS",
+    "AngularJS",
+  ],
 };
 
 const experiencePuti = {
